@@ -1,0 +1,67 @@
+complete:
+    fail: Process Completed - Failure
+    success: Process Completed - Success
+conctact:
+    name: Audit Management System
+contact:
+    email: ams@gmail.com
+    web: ams.com
+feign:
+    exp: Feign  Exception Caught
+    'null': Feign Proxy returned Null Object
+    proxy:
+        exp: Feign Proxy Exception Caught
+fos:
+    auth: http://localhost:9400/
+logging:
+#    level: info
+    level.org.hibernate.stat: debug
+    level.org.springframework.web: DEBUG
+server:
+    port: 9100
+spring:
+    application:
+        name: auditChecklist
+    datasource:
+        driverClassName: org.h2.Driver
+        password: ''
+        url: jdbc:h2:mem:AuditQues
+        username: audit
+    h2:
+        console:
+            enabled: true
+            path: /h2-console
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+string:
+    end: End
+    invalid:
+        cred: Invalid Credentials
+    main:
+        package: com.cognizant
+    'null': Oops! Something went wrong
+    null.exception: Array out of bounds
+    req: 'Request{}:'
+    res: 'ResponceEntity{}:'
+    start: Start
+    swagg:
+        desc: Audit CheckList returns list of questions based on the AuditType selected
+            by the user
+        help: Help
+        lic: Audit 1.0
+        title: Audit Checklist Service Documentation
+        ver: 1.0
+    token: 'Token{}:'
+    token.exp: Token Expired! login again
+    valfail: Validation Failed
+valcheck:
+    fail: End checkTokenValidity fail
+    success: End checkTokenValidity success
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
