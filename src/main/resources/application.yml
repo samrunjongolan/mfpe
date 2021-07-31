@@ -12,7 +12,7 @@ feign:
     proxy:
         exp: Feign Proxy Exception Caught
 fos:
-    auth: http://65.1.167.184:9400/
+    auth: http://13.235.58.76:9400/
 logging:
 #    level: info
     level.org.hibernate.stat: debug
@@ -64,4 +64,4 @@ eureka:
   client:
     enabled: true
     serviceUrl:
-      defaultZone: http://3.7.74.91//eureka/
+      defaultZone: http://3.7.74.91:8761/eureka/
