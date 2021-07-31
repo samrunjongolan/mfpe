@@ -62,6 +62,6 @@ valcheck:
     success: End checkTokenValidity success
 eureka:
   client:
-    enabled: false
+    enabled: true
     serviceUrl:
-      defaultZone: http://http://65.1.167.184:8761/eureka/
+      defaultZone: http://3.7.74.91//eureka/
