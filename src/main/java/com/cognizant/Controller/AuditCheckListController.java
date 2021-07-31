@@ -87,6 +87,7 @@ public class AuditCheckListController {
 	@GetMapping("/check")
 	public ResponseEntity<String> check(@RequestParam String name){
 		return ResponseEntity<String>(name,HttpStatus.OK);
+	}
 	
 		
 }
