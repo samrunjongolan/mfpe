@@ -84,10 +84,9 @@ public class AuditCheckListController {
 		
 	}
 	
-	@GetMapping(/check)
-	public ResponseEntity<String> check(@PathVariable String name){
-		String msg = "Hi, I am " + name + "codebuild working for pipelining.";
-		return ResponseEntity<String>(msg,HttpStatus.OK);
+	@GetMapping("/check")
+	public ResponseEntity<String> check(@RequestParam String name){
+		return ResponseEntity<String>(name,HttpStatus.OK);
 	
 		
 }
