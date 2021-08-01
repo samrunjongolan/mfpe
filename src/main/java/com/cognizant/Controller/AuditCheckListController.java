@@ -70,7 +70,7 @@ public class AuditCheckListController {
 			responseEntity = new ResponseEntity<List<QuestionsEntity>>(questionsList,HttpStatus.OK);
 			log.debug(env.getProperty("string.res"),responseEntity);
 			log.info(env.getProperty("string.end"));
-			return "ok done";
+			return responseEntity;
 			
 		}
 		else {
